@@ -16,7 +16,7 @@
 7. Wait for extensions to install
 8. Once container is running, in the integrated terminal run `yarn test`
 
-This will cause MMS to stall when executing `await MongoMemoryServer.create();`
+This will cause MMS to stall when executing `await MongoMemoryServer.create();` on M1 Macs running Docker in Platform linux/arm64
 
 
 ## Common Errors
