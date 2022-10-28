@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  debug-mms:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    deploy:
+      replicas: 1
+    platform: linux/amd64
+    ports:
+      - 5001:5001
+      - 9229:9229 # Allows debugging port passthrough
+    volumes:
+      - ./:/usr/share/backend-server
+      - /usr/share/backend-server/node_modules
+    networks:
+      - local
+
+networks:
+  local:
