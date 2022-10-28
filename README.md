@@ -8,7 +8,7 @@
 ## Setup
 
 1. Run Docker Locally
-2. Type `docker-compose up --build`
+2. Type `docker-compose up --build` in the root of the application directory
 3. Wait for containers to come online
 4. Open this source code in VS Code
 5. In the bottom left corner click the >< green icon
